@@ -9,6 +9,7 @@
 -- Bu yapının kullanımı dizilerle beraber çok daha güzel olacak. Bir listeyi alt alta sıralı şeklinde gösterebildiğimiz yapıdır Tableview. Main sayfasında Label ekler gibi TableView ekliyoruz ve kod bölümüne onu tanımlıyoruz.
 -- Sonra class bölümünde UIViewController sınıfı zaten tanımlı. Bunun yanında TableView özelliklerini kullanabilmek için 2 adet daha Protokol ekliyoruz. Bunlar soyut kavramlar ileri ki derslerde görülecek. Bu 2 protokolü ekleyince hata verecek ve bunların kullanımını sağlayan fonksiyonları yazmamız gerekecek. Fix ile de ekleniyor ama manuel yazmak daha düzgün çalışmasını sağlıyor.
 -- DELEGATE ve DATASOURCE uzantılı iki adet protokolü ekledikten sonra sınıf parantezi içinde "Numberofrawinsection" ve "Cellforrawat" isimli iki fonksiyonu ekleyeceğiz. Sınıfa 2 protokolü eklemezsek bu 2 fonksiyonu çağıramayız.
+--değişiklik 2 notu...
  */
 import UIKit
 
