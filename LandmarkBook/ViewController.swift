@@ -87,5 +87,15 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         }
     }
     
+    //bu "commit" fonksiyonu table'da ki hücrenin yana kaydırılması sonucunda hangi işlemlerin yapılacağını belirtmek için kullanılıyor.
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.landMarkNames.remove(at: indexPath.row)
+            self.landMarkImages.remove(at: indexPath.row)
+            // tableView.reloadData()  silinen bilginin table'da gösterilmemesi için bilgileri reload yaptırabiliriz ama bu bütün bilgileri reload yapabilir. onun yerine silinmek istenen hücreyi sildireceğiz.
+            tableView.deleteRows(at: [indexPath], with: .fade)  // silinmesini istediğimiz yerin indexPath olarak [] parantez içinde yazmamız gerekiyor...
+        }
+    }
+    
 }
 
