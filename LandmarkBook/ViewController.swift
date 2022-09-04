@@ -19,6 +19,9 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
     var landMarkNames = [String]()
     var landMarkImages = [UIImage]()
     
+    var chosenLandMarkLabel = ""
+    var chosenLandMarkImage = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,10 +50,6 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         
     }
     
-    
-    
-    
-    
     //ilk fonksiyon ne kadarlık bir liste gösterileceğini soruyor ve Int döndürüyor. Buraya ne kadarlık liste istiyorsak onu yazıyoruz.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return landMarkNames.count
@@ -72,5 +71,21 @@ class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSo
         
         
     }
+    
+    //bir hücre seçildiğinde ne yapılması gerektiğini bu fonksiyon içinde yazacağız...
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        chosenLandMarkLabel = landMarkNames [indexPath.row] //hangisi seçildiyse ismi değişkene aktar.
+        chosenLandMarkImage = landMarkImages [indexPath.row] //hangisi seçildiyse image'ı aktar.
+        performSegue(withIdentifier: "toDetailsVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsVC"{
+            let destinationVC = segue.destination as! DetailsVC
+            destinationVC.selectedLandMarkName = chosenLandMarkLabel
+            destinationVC.selectedLandMarkImage = chosenLandMarkImage
+        }
+    }
+    
 }
 

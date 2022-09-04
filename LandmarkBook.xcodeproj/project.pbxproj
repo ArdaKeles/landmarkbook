@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760B25EF28C4CBCB00E99783 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760B25EE28C4CBCB00E99783 /* DetailsVC.swift */; };
 		768F7EB128C3FA3E00FCF0DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F7EB028C3FA3E00FCF0DE /* AppDelegate.swift */; };
 		768F7EB328C3FA3E00FCF0DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F7EB228C3FA3E00FCF0DE /* SceneDelegate.swift */; };
 		768F7EB528C3FA3E00FCF0DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F7EB428C3FA3E00FCF0DE /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760B25EE28C4CBCB00E99783 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		768F7EAD28C3FA3E00FCF0DE /* LandmarkBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandmarkBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768F7EB028C3FA3E00FCF0DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768F7EB228C3FA3E00FCF0DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				768F7EB028C3FA3E00FCF0DE /* AppDelegate.swift */,
 				768F7EB228C3FA3E00FCF0DE /* SceneDelegate.swift */,
 				768F7EB428C3FA3E00FCF0DE /* ViewController.swift */,
+				760B25EE28C4CBCB00E99783 /* DetailsVC.swift */,
 				768F7EB628C3FA3E00FCF0DE /* Main.storyboard */,
 				768F7EB928C3FA3E00FCF0DE /* Assets.xcassets */,
 				768F7EBB28C3FA3E00FCF0DE /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768F7EB528C3FA3E00FCF0DE /* ViewController.swift in Sources */,
+				760B25EF28C4CBCB00E99783 /* DetailsVC.swift in Sources */,
 				768F7EB128C3FA3E00FCF0DE /* AppDelegate.swift in Sources */,
 				768F7EB328C3FA3E00FCF0DE /* SceneDelegate.swift in Sources */,
 			);
